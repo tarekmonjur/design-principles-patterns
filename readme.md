@@ -24,7 +24,7 @@ The best architects aren't dictators, they are teachers.
 
 <br />
 
-# Micro Service
+# Micro Service Pattern
 * Smaller scoped unit of work.
 * Focus on data, business, or functional domains.
 
@@ -54,7 +54,9 @@ The best architects aren't dictators, they are teachers.
 
 <br>
 
-# Application Landscape Patterns
+# Software Architecture Pattern
+
+## Application Landscape Patterns
 * Single application to the end user.
 * Multiple applications behind the scenes possible.
 
@@ -65,7 +67,7 @@ The best architects aren't dictators, they are teachers.
 ### Serverless
 ### Peer to Peer
 
-# Application Structure Patterns
+## Application Structure Patterns
 * Single executable.
 * Can be part of a large application landscape.
 
@@ -74,7 +76,7 @@ The best architects aren't dictators, they are teachers.
 ### Command Query Responsibility Segregation (CQRS)
 ### Event sourcing
 
-# User Interface Patterns
+## User Interface Patterns
 ### Model view controller (MVS)
 ### Model view presenter (MVP)
 ### Model view ViewModel (MVVM)

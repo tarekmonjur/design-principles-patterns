@@ -1,6 +1,6 @@
 # Design Patterns
 
-## SOLID design principles
+## [SOLID design principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 
 # Software Architecture
 

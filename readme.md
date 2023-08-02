@@ -6,20 +6,20 @@
 
 # Software Architect
 
-* keep many different components in your mind
+* keep many different components in your mind.
 * Have a rudimentary knowledge of how they all work.
 * Software architects focus on the big picture.
 * High-level understanding.
 
 ### Best Architects
 The best architects aren't dictators, they are teachers.
-* Work with developers
-* Understand the facts
-* Guide team to a solution
-* Lead developers to the right decisions
-* Work with their teams
-* Need a motivated team to do their best work
-* Leverage the experience of the team
+* Work with developers.
+* Understand the facts.
+* Guide the team to a solution.
+* Lead developers to the right decisions.
+* Work with their teams.
+* Need a motivated team to do their best work.
+* Leverage the experience of the team.
 * Train, encourage, and energize the team members.
 
 <br />
@@ -31,17 +31,23 @@ The best architects aren't dictators, they are teachers.
 ## Decomposition Pattern
 * Domain base.
 * Business base.
-* Atomic transaction base
-* Strangler Pattern
-* Sidcar Pattern
+* Atomic transaction base.
+* Strangler Pattern.
+* Sidcar Pattern.
 
 ## Integration Pattern
 * Gateway Pattern.
-* Aggregator Pattern.
+* Process Aggregator Pattern.
 * Edge Pattern.
 
+## Data Pattern
+* Single service database.
+* shared service database.
+* Command Query Responsibility Segregation.
+* Asynchronous eventing.
+
 ## Operational Pattern
-* Log Aggregation Pattern
-* Metrics Aggregation Pattern
+* Log Aggregation Pattern.
+* Metrics Aggregation Pattern.
 * Tracing Pattern.
-* External Configuration
+* External Configuration.

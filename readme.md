@@ -51,3 +51,30 @@ The best architects aren't dictators, they are teachers.
 * Metrics Aggregation Pattern.
 * Tracing Pattern.
 * External Configuration.
+
+<br>
+
+# Application Landscape Patterns
+* Single application to the end user.
+* Multiple applications behind the scenes possible.
+
+### Monolith
+### N-tier
+### Service oriented
+### Microservices
+### Serverless
+### Peer to Peer
+
+# Application Structure Patterns
+* Single executable.
+* Can be part of a large application landscape.
+
+### Layered
+### Microkernel
+### Command Query Responsibility Segregation (CQRS)
+### Event sourcing
+
+# User Interface Patterns
+### Model view controller (MVS)
+### Model view presenter (MVP)
+### Model view ViewModel (MVVM)

@@ -60,7 +60,18 @@ The best architects aren't dictators, they are teachers.
 * Single application to the end user.
 * Multiple applications behind the scenes possible.
 
-### Monolith
+### Monolith:
+**Advantages:**
+* Simple architecture.
+* Easy to understand, implement, and test.
+* Easy Deployment.
+* Ideal for limited scope.
+
+**Disadvantages:**
+* Tight coupling.
+* Easily leads to complex code.
+* One size fits all for every subdomain.
+
 ### N-tier
 ### Service oriented
 ### Microservices

@@ -81,7 +81,7 @@ The best architects aren't dictators, they are teachers.
 * costly
 * Many different views.
 
-### Microservices:
+### Microservices Pattern:
 * Multiple services.
 * Each service is a business activity.
 * Team runs the service.
@@ -98,7 +98,7 @@ The best architects aren't dictators, they are teachers.
 * Boundaries are not always clear.
 * Communication patterns can become complex. 
 
-### Serverless:
+### Serverless Pattern:
 * Backend as a service.
 * Function as a service.
 
@@ -111,7 +111,7 @@ The best architects aren't dictators, they are teachers.
 * It's tricky to maintain the state in memory.
 * It suffers from a concept called cold starts.
 
-### Peer to Peer:
+### Peer-to-Peer Pattern:
 * No central server.
 * No constant connection.
 * Dynamically discoverable.
@@ -131,10 +131,43 @@ The best architects aren't dictators, they are teachers.
 * Single executable.
 * Can be part of a large application landscape.
 
-### Layered
-### Microkernel
-### Command Query Responsibility Segregation (CQRS)
-### Event sourcing
+### Layered Pattern:
+The layer pattern contains five layers. Each layer has distinct responsibility.
+* Presentation -> User Interface.
+* Application -> Translation between UI and business.
+* Business -> Business logic.
+* Persistence -> Code to interact with the database.
+* Data -> Database.
+
+**Advantages:**
+* Well-known among developers
+* Easy to organize.
+
+**Disadvantages:**
+* Can lead to monolithic applications.
+* Need to write lots of code.
+
+### Microkernel Pattern:
+It's also called plugin pattern. In this pattern, the application consists of a core logic that can be extended with plugins.
+* Task Scheduler.
+* Workflow.
+* Data Processing.
+* Browser extension.
+
+**Advantages:**
+* Flexibility.
+* Clean separation.
+* Separate teams possible.
+* Add and remove functionality at runtime.
+
+**Disadvantages:**
+* Core API might not fit future plugins
+
+### Command Query Responsibility Segregation (CQRS) Pattern:
+This is a pattern where two entirely separate models in our applications.
+
+### Event sourcing Pattern:
+
 
 ## User Interface Patterns
 ### Model view controller (MVS)

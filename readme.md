@@ -129,8 +129,33 @@ The best architects aren't dictators, they are teachers.
 * Communication patterns can become complex. 
 
 ### Serverless
+* Backend as a service.
+* Function as a service.
+
+**Advantages:**
+* Scaling very easily.
+* Cost reduction.
+
+**Disadvantages:**
+* Vendor can stop supporting the current framework version.
+* It's tricky to maintain the state in memory.
+* It suffers from a concept called cold starts.
 
 ### Peer to Peer
+* No central server.
+* No constant connection.
+* Dynamically discoverable.
+
+**Advantages:**
+* Cost effective.
+* Sharing resources.
+* Easy scaling.
+
+**Disadvantages:**
+* Its has drawback.
+* Possible security issues.
+* Only for specific scenarios.
+* Nontrivial to code.
 
 ## Application Structure Patterns
 * Single executable.

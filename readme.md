@@ -60,7 +60,7 @@ The best architects aren't dictators, they are teachers.
 * Single application to the end user.
 * Multiple applications behind the scenes possible.
 
-### Monolith:
+### Monolith Pattern:
 **Advantages:**
 * Simple architecture.
 * Easy to understand, implement, and test.
@@ -72,8 +72,35 @@ The best architects aren't dictators, they are teachers.
 * Easily leads to complex code.
 * One size fits all for every subdomain.
 
-### N-tier
-### Service oriented
+### N-tier Pattern:
+* Multiple tiers.
+* Tier performs specific tasks.
+* Tier can be physically separated.
+* Tiers aren't layers.
+* Cross-technical boundaries are not functional.
+
+**3-Tier**
+* Presentation tier.
+  * UI and UI logic.   
+* Business logic tier.
+  * Business logic
+* Data tier.
+  * Database
+ 
+**Advantage:**
+* Independent development.
+* Scalability
+
+**Disadvantage:**
+* Changes ripple through tiers
+
+### Service-oriented Pattern:
+* Multiple services.
+* Each service is a business activity.
+* Service composability.
+* Contract standardization.
+* Enterprise service bus.
+
 ### Microservices
 ### Serverless
 ### Peer to Peer

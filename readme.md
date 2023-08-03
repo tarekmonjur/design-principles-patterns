@@ -22,39 +22,9 @@ The best architects aren't dictators, they are teachers.
 * Leverage the experience of the team.
 * Train, encourage, and energize the team members.
 
-<br />
-
-# Micro Service Pattern
-* Smaller scoped unit of work.
-* Focus on data, business, or functional domains.
-
-## Decomposition Pattern
-* Domain base.
-* Business base.
-* Atomic transaction base.
-* Strangler Pattern.
-* Sidcar Pattern.
-
-## Integration Pattern
-* Gateway Pattern.
-* Process Aggregator Pattern.
-* Edge Pattern.
-
-## Data Pattern
-* Single service database.
-* shared service database.
-* Command Query Responsibility Segregation.
-* Asynchronous eventing.
-
-## Operational Pattern
-* Log Aggregation Pattern.
-* Metrics Aggregation Pattern.
-* Tracing Pattern.
-* External Configuration.
-
 <br>
 
-# Software Architecture Pattern
+# Software Architecture Patterns
 
 ## Application Landscape Patterns
 * Single application to the end user.
@@ -106,12 +76,12 @@ The best architects aren't dictators, they are teachers.
 * Scalability.
 * No duplication of functionality.
 
-**disadvantages:**
+**Disadvantages:**
 * Reduce agility and team autonomy.
 * costly
 * Many different views.
 
-### Microservices
+### Microservices:
 * Multiple services.
 * Each service is a business activity.
 * Team runs the service.
@@ -128,7 +98,7 @@ The best architects aren't dictators, they are teachers.
 * Boundaries are not always clear.
 * Communication patterns can become complex. 
 
-### Serverless
+### Serverless:
 * Backend as a service.
 * Function as a service.
 
@@ -141,7 +111,7 @@ The best architects aren't dictators, they are teachers.
 * It's tricky to maintain the state in memory.
 * It suffers from a concept called cold starts.
 
-### Peer to Peer
+### Peer to Peer:
 * No central server.
 * No constant connection.
 * Dynamically discoverable.
@@ -170,3 +140,33 @@ The best architects aren't dictators, they are teachers.
 ### Model view controller (MVS)
 ### Model view presenter (MVP)
 ### Model view ViewModel (MVVM)
+
+<br />
+
+# Micro Service Patterns
+* Smaller scoped unit of work.
+* Focus on data, business, or functional domains.
+
+## Decomposition Patterns
+* Domain base.
+* Business base.
+* Atomic transaction base.
+* Strangler Pattern.
+* Sidcar Pattern.
+
+## Integration Patterns
+* Gateway Pattern.
+* Process Aggregator Pattern.
+* Edge Pattern.
+
+## Data Patterns
+* Single service database.
+* shared service database.
+* Command Query Responsibility Segregation.
+* Asynchronous eventing.
+
+## Operational Patterns
+* Log Aggregation Pattern.
+* Metrics Aggregation Pattern.
+* Tracing Pattern.
+* External Configuration.

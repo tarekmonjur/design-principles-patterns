@@ -58,7 +58,7 @@ The best architects aren't dictators, they are teachers.
 
 ## Application Landscape Patterns
 * Single application to the end user.
-* Multiple applications behind the scenes possible.
+* Multiple applications behind the scenes are possible.
 
 ### Monolith Pattern:
 **Advantages:**
@@ -87,11 +87,11 @@ The best architects aren't dictators, they are teachers.
 * Data tier.
   * Database
  
-**Advantage:**
+**Advantages:**
 * Independent development.
 * Scalability
 
-**Disadvantage:**
+**Disadvantages:**
 * Changes ripple through tiers
 
 ### Service-oriented Pattern:
@@ -101,8 +101,35 @@ The best architects aren't dictators, they are teachers.
 * Contract standardization.
 * Enterprise service bus.
 
+**Advantages:**
+* Services are loosely coupled.
+* Scalability.
+* No duplication of functionality.
+
+**disadvantages:**
+* Reduce agility and team autonomy.
+* costly
+* Many different views.
+
 ### Microservices
+* Multiple services.
+* Each service is a business activity.
+* Team runs the service.
+* No logic-heavy enterprise service bus.
+* Maximum automation like test and deployment.
+
+**Advantages:**
+* Services are loosely coupled and scalable.
+* Increase agility.
+* Reliablity.
+* Designed to handle failures.
+
+**Disadvantages**
+* Boundaries are not always clear.
+* Communication patterns can become complex. 
+
 ### Serverless
+
 ### Peer to Peer
 
 ## Application Structure Patterns

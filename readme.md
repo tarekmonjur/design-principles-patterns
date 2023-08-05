@@ -165,14 +165,67 @@ It's also called plugin pattern. In this pattern, the application consists of a 
 
 ### Command Query Responsibility Segregation (CQRS) Pattern:
 This is a pattern where two entirely separate models in our applications.
+* Two models: read/query and write/command.
+* Allows for scenario-specific quires.
+* Synchronization required.
+* Different from event sourcing.
+
+**Advantages:**
+* Simpler read queries.
+* Faster and more scalable read queries.
+* Easier to communicate with stakeholders.
+
+**Disadvantages:**
+* Added complexity.
+* Learning curve.
+* Possibility of data inconsistencies.
+* Eventual consistency.
 
 ### Event sourcing Pattern:
+* Store events instead of the current state.
+* Event = something that happened in the past.
+* Rehydration or replay.
 
+**Advantages:**
+* Trace of events.
+* Audit trail.
+* Business language.
+* Event replay.
+
+**Disadvantages:**
+* Replay and external system.
+* Event structure changes.
+* Snapshots
 
 ## User Interface Patterns
 ### Model view controller (MVS)
+**Advantages:**
+* Separation of concerns.
+* Parallel development.
+* Popular in web frameworks.
+
+**Disadvantages:**
+* Controllers can become bloated.
+
 ### Model view presenter (MVP)
+**Advantages:**
+* Great for desktop applications.
+* Separation of concerns
+* Testability.
+
+**Disadvantages:**
+* Presenters can be bloated.
+* Desktop applications are less popular.
+
 ### Model view ViewModel (MVVM)
+**Advantages:**
+* Great for modern desktop and mobile applications.
+* Separation of concerns.
+* Testability.
+
+**Disadvantages:**
+* Overkill for simple user interfaces.
+* More difficult to debug.
 
 <br />
 

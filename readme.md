@@ -1,6 +1,7 @@
 # Design Patterns & Principles:
 
 ## Design Principles:
+Design principles are general guidelines that can guide our class structure and relationships.
 Design principles help us by giving an additional set of guidelines on top of the core object-oriented concepts.
 Following these Design Principles have resulted in a set of recurring patterns and we call those structures design patterns.
 
@@ -20,9 +21,19 @@ Following these Design Principles have resulted in a set of recurring patterns a
 * Loose coupling.
 * SOLID.
 
-## [SOLID design principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
+#### Encapsulate what varies:
+Identify the aspects of your application that vary and separate them from what stays the same. Look is the same code changing with every new requirement?
+Then you know you have got a behavior that really needs to be pulled out and separated from all the stuff that doesn't change.
+**Encapsulate what varies** Underlines almost all design patterns.
 
-<br />
+### [SOLID Design Principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
+
+<br/>
+
+## Design Patterns:
+Design patterns are tried-and-true design solutions that have been found to solve specific problems.
+
+<br/>
 
 # Software Architect
 

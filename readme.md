@@ -21,10 +21,14 @@ Following these Design Principles have resulted in a set of recurring patterns a
 * Loose coupling.
 * SOLID.
 
-#### Encapsulate what varies:
+### Encapsulate what varies:
 Identify the aspects of your application that vary and separate them from what stays the same. Look is the same code changing with every new requirement?
 Then you know you have got a behavior that really needs to be pulled out and separated from all the stuff that doesn't change.
 **Encapsulate what varies** Underlines almost all design patterns.
+* Look for code that changes with every new requirement.
+* Alter or extend the code that varies without affecting code that doesn't.
+* Basis of almost every design pattern.
+* Pay attention to how each pattern makes use of this principle.
 
 ### [SOLID Design Principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 

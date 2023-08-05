@@ -1,4 +1,24 @@
-# Design Patterns
+# Design Patterns & Principles:
+
+## Design Principles:
+Design principles help us by giving an additional set of guidelines on top of the core object-oriented concepts.
+Following these Design Principles have resulted in a set of recurring patterns and we call those structures design patterns.
+
+* Guidelines, not rules or laws.
+* Observed to result in good object-oriented designs.
+* Help us avoid bad object-oriented design.
+
+#### Symptoms of bad design:
+* Rigidity -> hard to change due to dependencies.
+* Fragility -> As make changes then getting unexpected bugs that maybe comes from unrelated parts.
+* Immobility -> Hard to reuse.
+
+### Fundamental Principles:
+* Encapsulate what varies.
+* Favor composition.
+* Program to interfaces.
+* Loose coupling.
+* SOLID.
 
 ## [SOLID design principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 

@@ -80,21 +80,25 @@ Composition can provide an alternative subclassing for extending behavior.
 - Composition is a common technique used in design patterns.
 
 ## :couple: Loose Coupling:
+
 Components should be independent, Relying on the knowledge of other components as little as possible.
 This principle says to strive for loosely coupled designs between objects and interact.
 The opposite of loose coupling is tight coupling, which typically means that components are too dependent on each other.
+
 - Loose coupling reduces the dependency between components.
 
 ### Let's see a tight coupling example: A Weather APP
-![Tight couple weather app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/favor-composition-coffee-class.png)
+
+![Tight couple app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/tight-coupling-app-component.png)
 
 - The weather app is relying on a concrete class to do the display.
 - The weather app knows a lot about the LCDScreen.
 - Changes to LCDScrren are going to affect the Weather app and vice versa.
 
 ### Improve the weather app to loosely coupling:
-![Tight couple weather app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/favor-composition-coffee-class.png)
-![Tight couple weather app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/favor-composition-coffee-class.png)
+
+![Loosely coupling app interface classes](https://github.com/tarekmonjur/design-patterns/blob/master/dist/loosely-coupling-interface-classes.png)
+![Loosely coupling app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/loosely-coupling-component.png)
 
 - The weather has no real knowledge of the screen, other than that it implements the Screen interface.
 - The weather app and any screen can change their internal implementations and it won't impact the other class.

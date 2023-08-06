@@ -39,9 +39,9 @@ Then you know you have got a behavior that really needs to be pulled out and sep
 
 ### Encapsulate factory example:
 
-#### Let's say we have a system for order pancakes and here we have an order pancake method.
+#### Let's say we have a system for ordering pancakes and here we have an order pancake method.
 
-Its very simple that create a concrete class object for specific pancake based on type and then its cook the pancake, plate it, add some butter and finaly return the pancake.
+It's very simple that create a concrete class object for a specific pancake based on types and then cook the pancake, plate it, add some butter, and finally return the pancake.
 
 ```
 public Pancake orderPancake(String type) {
@@ -65,11 +65,11 @@ public Pancake orderPancake(String type) {
 }
 ```
 
-#### But let's think about how this code change over request to take banana pancake off the menu, perhaps its poor selling. Likewise request to add new pancake to the menu list.So overtime selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.
+#### But let's think about how this code change over the request to take banana pancake off the menu, perhaps it's poor selling. Likewise, request to add a new pancake to the menu list. So over time selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.
 
-### Create independant factory:
+### Create an independent factory:
 
-we have to find what is varying and pull it out into its own self-container, so that we can change or update that on its own. So looking at the code and see that the part1 is actully is vary and part2 does not vary.
+we have to find what is varying and pull it out into its own self-contained so that we can change or update that on its own. So looking at the code and see that part1 is actually is vary and part2 does not vary.
 
 ```
 public class SimplePancakeFactory {
@@ -89,7 +89,7 @@ public class SimplePancakeFactory {
 }
 ```
 
-#### Now our pancake menu can be altered at any time witout affecting the rest of our code.
+#### Now our pancake menu can be altered at any time without affecting the rest of our code.
 
 <br/>
 

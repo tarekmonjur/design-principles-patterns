@@ -37,7 +37,7 @@ Then you know you have got a behavior that really needs to be pulled out and sep
 - Basis of almost every design pattern.
 - Pay attention to how each pattern makes use of this principle.
 
-### Encapsulate factory eample:
+### Encapsulate factory example:
 
 #### Let's say we have a system for order pancakes and here we have an order pancake method.
 
@@ -65,13 +65,11 @@ public Pancake orderPancake(String type) {
 }
 ```
 
-#### But let's think about how this code change over request to take banana pancake off the menu, perhaps its poor selling. Likewise request to add new pancake to the menu list.
-
-**So overtime we are going to end up with all the code that is selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.**
+#### But let's think about how this code change over request to take banana pancake off the menu, perhaps its poor selling. Likewise request to add new pancake to the menu list.So overtime selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.
 
 ### Create independant factory:
 
-#### we have to find what is varying and pull it out into its own self-container, so that we can change or update that on its own. So looking at the code and see that the part1 is actully is vary and part2 does not vary.
+we have to find what is varying and pull it out into its own self-container, so that we can change or update that on its own. So looking at the code and see that the part1 is actully is vary and part2 does not vary.
 
 ```
 public class SimplePancakeFactory {
@@ -90,6 +88,8 @@ public class SimplePancakeFactory {
   }
 }
 ```
+
+#### Now our pancake menu can be altered at any time witout affecting the rest of our code.
 
 <br/>
 

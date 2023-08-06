@@ -24,6 +24,8 @@ Following these Design Principles have resulted in a set of recurring patterns a
 - Loose coupling.
 - SOLID.
 
+<br/>
+
 ## :pill: Encapsulate what varies:
 
 Identify the aspects of your application that vary and separate them from what stays the same. Look is the same code changing with every new requirement?
@@ -34,6 +36,60 @@ Then you know you have got a behavior that really needs to be pulled out and sep
 - Alter or extend the code that varies without affecting code that doesn't.
 - Basis of almost every design pattern.
 - Pay attention to how each pattern makes use of this principle.
+
+### Encapsulate factory eample:
+
+#### Let's say we have a system for order pancakes and here we have an order pancake method.
+
+Its very simple that create a concrete class object for specific pancake based on type and then its cook the pancake, plate it, add some butter and finaly return the pancake.
+
+```
+public Pancake orderPancake(String type) {
+  Pancake pancake;
+  // part1
+  if (type.equals == 'classic') {
+    pancake = new ClassicPancake();
+  } else if (type.equals == 'bluberry') {
+    pancake = new BlueberryPancake();
+  } else if (type.equals == 'chocolate') {
+    pancake = new ChocolatePancake();
+  } else if (type.equals == 'banana') {
+    pancake = new BanannaPancake();
+  }
+
+  // part2
+  pancake.cook();
+  pancake.plate();
+  pancake.addButter();
+  return pancake.
+}
+```
+
+#### But let's think about how this code change over request to take banana pancake off the menu, perhaps its poor selling. Likewise request to add new pancake to the menu list.
+
+**So overtime we are going to end up with all the code that is selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.**
+
+### Create independant factory:
+
+#### we have to find what is varying and pull it out into its own self-container, so that we can change or update that on its own. So looking at the code and see that the part1 is actully is vary and part2 does not vary.
+
+```
+public class SimplePancakeFactory {
+  public Pancake createPancake(String type) {
+    Pancake pancake == null;
+    if (type.equals == 'classic') {
+      pancake = new ClassicPancake();
+    } else if (type.equals == 'bluberry') {
+      pancake = new BlueberryPancake();
+    } else if (type.equals == 'chocolate') {
+      pancake = new ChocolatePancake();
+    } else if (type.equals == 'banana') {
+      pancake = new BanannaPancake();
+    }
+    return pancake;
+  }
+}
+```
 
 <br/>
 
@@ -109,7 +165,7 @@ The opposite of loose coupling is tight coupling, which typically means that com
 
 <br/>
 
-## Program to Interfaces:
+## :anchor: Program to Interfaces:
 
 This design principle guide us to make use to abstract types, not concret ones to allow our design to be more flexible and maintable.
 
@@ -130,6 +186,11 @@ Like, if we want to change to another database in the future, Or like if we ant 
 ### Programming in an inerface:
 
 So if we know the desing principle **Program to inerface, not implemention** then here is our new design.
+
+- Use interfaces or abastract classes when possible, rather then concrete classes.
+- Allow to better exploit polymorphism.
+- Frees classes from knowledge of concrete types.
+- Improves extensibility and maintainability.
 
 ![Programming to interface](https://github.com/tarekmonjur/design-patterns/blob/master/dist/programming-to-interface.png)
 

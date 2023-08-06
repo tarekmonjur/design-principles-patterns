@@ -30,6 +30,38 @@ Then you know you have got a behavior that really needs to be pulled out and sep
 * Basis of almost every design pattern.
 * Pay attention to how each pattern makes use of this principle.
 
+### Favor composition over inheritance:
+Its also known - `HAS-A is better than IS-A`
+
+#### IS-A is an inheritance relationship. As like
+* A Dog is an Animal, Dog --> Animal.
+* Or A taxi is an automobile. Taxi --> Automobile.
+
+#### HAS-A is a relationship of composition. As like
+* A Dog has an Owner. Dog --<> Owner.
+* Taxi has a Passenger. Taxi --<> Passenger.
+
+### Let's consider a coffee shop:
+Many customers request coffee with condiments. As like this.
+
+### If we want to add a caramel condiment:
+What about when a customer wants both butter and milk or a different condiment in a coffee?
+Or, let's say we have a new topping, like caramel. Then we will need another class for that variant.
+Ah, that actually commentatorial explosion of classes over time. as we have to deal with all the combinations.
+
+### Let's see a different approach: Favor composition over inheritance.
+**Instead of a coffeeWithButter IS-A coffee, what about a coffee HAS-A condiments?**
+Composition can provide an alternative subclassing for extending behavior.
+
+#### Improved this design with composition:
+* We can add any number of condiments easily at runtime.
+* Implementing new condiments by adding a new class.
+* No code duplication.
+* Avoid class explosion.
+* Instead of inheriting behavior, we can compose our objects with new behaviors.
+* Composition often gives us more flexibility, even allows behavior changes at runtime.
+* Composition is a common technique used in design patterns.
+
 ### [SOLID Design Principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 
 <br/>

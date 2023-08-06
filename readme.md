@@ -24,7 +24,7 @@ Following these Design Principles have resulted in a set of recurring patterns a
 - Loose coupling.
 - SOLID.
 
-### :pill: Encapsulate what varies:
+## :pill: Encapsulate what varies:
 
 Identify the aspects of your application that vary and separate them from what stays the same. Look is the same code changing with every new requirement?
 Then you know you have got a behavior that really needs to be pulled out and separated from all the stuff that doesn't change.
@@ -35,7 +35,9 @@ Then you know you have got a behavior that really needs to be pulled out and sep
 - Basis of almost every design pattern.
 - Pay attention to how each pattern makes use of this principle.
 
-### :dvd: Favor composition over inheritance:
+<br/>
+
+## :dvd: Favor composition over inheritance:
 
 Its also known - `HAS-A is better than IS-A`
 
@@ -79,6 +81,8 @@ Composition can provide an alternative subclassing for extending behavior.
 - Composition often gives us more flexibility, even allows behavior changes at runtime.
 - Composition is a common technique used in design patterns.
 
+<br/>
+
 ## :couple: Loose Coupling:
 
 Components should be independent, Relying on the knowledge of other components as little as possible.
@@ -89,19 +93,45 @@ The opposite of loose coupling is tight coupling, which typically means that com
 
 ### Let's see a tight coupling example: A Weather APP
 
-![Tight couple app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/tight-coupling-app-component.png)
-
 - The weather app is relying on a concrete class to do the display.
 - The weather app knows a lot about the LCDScreen.
 - Changes to LCDScrren are going to affect the Weather app and vice versa.
 
+![Tight couple app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/tight-coupling-app-component.png)
+
 ### Improve the weather app to loosely coupling:
+
+- The weather has no real knowledge of the screen, other than that it implements the Screen interface.
+- The weather app and any screen can change their internal implementations and it won't impact the other class.
 
 ![Loosely coupling app interface classes](https://github.com/tarekmonjur/design-patterns/blob/master/dist/loosely-coupling-interface-classes.png)
 ![Loosely coupling app component](https://github.com/tarekmonjur/design-patterns/blob/master/dist/loosely-coupling-component.png)
 
-- The weather has no real knowledge of the screen, other than that it implements the Screen interface.
-- The weather app and any screen can change their internal implementations and it won't impact the other class.
+<br/>
+
+## Program to Interfaces:
+
+This design principle guide us to make use to abstract types, not concret ones to allow our design to be more flexible and maintable.
+
+#### Program to Inerface, Not implementatioins:
+
+Where possible, components should use abastract classes or interfaces instead of a specific implementation.
+`Progeam to an interface` really means `Program to a super type`
+
+### Programming in an implementation:
+
+Here we assigning the DB property to a new instance of the concrete class Commercial DB.
+So if we use a specific concrete class, like Commercial DB. Then we are going to be stuck with that implementation and then we will have to end up essentially hard coding by specific database vendor.
+
+![Program to implementation](https://github.com/tarekmonjur/design-patterns/blob/master/dist/programming-to-implementation.png)
+
+Like, if we want to change to another database in the future, Or like if we ant to test our code against a lightweight, low overhead test database, this design we have already committed to the commerical DB. So, we have code rework including every reference to that database.
+
+### Programming in an inerface:
+
+So if we know the desing principle **Program to inerface, not implemention** then here is our new design.
+
+![Programming to interface](https://github.com/tarekmonjur/design-patterns/blob/master/dist/programming-to-interface.png)
 
 <br/>
 

@@ -1,6 +1,6 @@
-# Design Patterns & Principles:
+# :rocket: Design Patterns & Principles:
 
-## Design Principles:
+## :mortar_board: Design Principles:
 
 Design principles are general guidelines that can guide our class structure and relationships.
 Design principles help us by giving an additional set of guidelines on top of the core object-oriented concepts.
@@ -24,7 +24,7 @@ Following these Design Principles have resulted in a set of recurring patterns a
 - Loose coupling.
 - SOLID.
 
-### Encapsulate what varies:
+### :pill: Encapsulate what varies:
 
 Identify the aspects of your application that vary and separate them from what stays the same. Look is the same code changing with every new requirement?
 Then you know you have got a behavior that really needs to be pulled out and separated from all the stuff that doesn't change.
@@ -35,7 +35,7 @@ Then you know you have got a behavior that really needs to be pulled out and sep
 - Basis of almost every design pattern.
 - Pay attention to how each pattern makes use of this principle.
 
-### Favor composition over inheritance:
+### :dvd: Favor composition over inheritance:
 
 Its also known - `HAS-A is better than IS-A`
 
@@ -49,7 +49,7 @@ Its also known - `HAS-A is better than IS-A`
 - A Dog has an Owner. Dog --<> Owner.
 - Taxi has a Passenger. Taxi --<> Passenger.
 
-### Let's consider a coffee shop:
+### Let's consider a coffee shop: :coffee:
 
 Many customers request coffee with condiments. As like this.
 ![inheritance coffee class](https://github.com/tarekmonjur/design-patterns/blob/master/dist/inheritance-coffee-class.png)
@@ -79,7 +79,7 @@ Composition can provide an alternative subclassing for extending behavior.
 - Composition often gives us more flexibility, even allows behavior changes at runtime.
 - Composition is a common technique used in design patterns.
 
-### [SOLID Design Principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
+### :zap: [SOLID Design Principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 
 <br/>
 
@@ -89,7 +89,7 @@ Design patterns are tried-and-true design solutions that have been found to solv
 
 <br/>
 
-# Software Architect
+# :sunglasses: Software Architect
 
 - keep many different components in your mind.
 - Have a rudimentary knowledge of how they all work.
@@ -111,7 +111,7 @@ The best architects aren't dictators, they are teachers.
 
 <br>
 
-# Software Architecture Patterns
+# :computer: Software Architecture Patterns
 
 ## Application Landscape Patterns
 

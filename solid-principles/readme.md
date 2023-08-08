@@ -1,4 +1,4 @@
-# SOLID Principle
+# :bulb: SOLID Principle
 
 - **Single Responsibility**
 - **Open / Closed**
@@ -8,7 +8,7 @@
 
 <br/>
 
-## Interface Segregation Principle:
+## :art: Interface Segregation Principle:
 
 - **Classes should depend on the smallest interface**
 - **Helps design good classes**
@@ -16,7 +16,7 @@
 
 <br/>
 
-## Liskov Substitution Principle:
+## :books: Liskov Substitution Principle:
 
 It helps to look at common code that can become a supper class and the special cases can become subclasses. When a design calls for polymorphic peer classes, this principle can be applied to each one of the peers.
 
@@ -26,7 +26,7 @@ It helps to look at common code that can become a supper class and the special c
 
 <br/>
 
-## Open Close Principle:
+## :open_file_folder: Open Close Principle:
 
 This principle helps to define what features of a class need to be exposed.
 
@@ -37,7 +37,7 @@ This principle helps to define what features of a class need to be exposed.
 
 <br/>
 
-## Dependency Inversion Principle:
+## :hourglass_flowing_sand: Dependency Inversion Principle:
 
 #### High-level modules should not depend on the low-level modules.
 
@@ -51,19 +51,22 @@ This principle is focused on packaging the code. Its make sure to avoid referenc
 
 We often think of the high-level components as some kind of policymakers that are commanding a set of low-level components, who are really carrying out all the real work.
 The problem with this approach is that it tightly couples our high-level components to our low-level ones.
-![Dependency inversion tight couple](https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-tight-couple.png)
-![Dependency inversioin tight couple example](https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-tight-couple-example.png)
+
+<img alt="Dependency inversion tight couple" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-tight-couple.png" width=30%>
+
+<img alt="Dependency inversioin tight couple example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-tight-couple-example.png" width=70%>
 
 ### Thinking with Dependency Inversion: Inverting the Dependency.
 
 The dependency inversion principle tells us to think of this in a different way, by reversing the direction of the dependency. It tells us really two things.
-![Dependency inversion loose couple](https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-loose-couple.png)
+
+<img alt="Dependency inversion loose couple" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-loose-couple.png" width=50%>
 
 #### First, as we said, high-level modules should not depend on low-level modules. Actually, both should depend on abstractions.
 
 #### Second, abstractions should not depend on details, Actually details should depend on abstractions.
 
-![Dependency inversion loose couple example](https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-loose-couple-example.png)
+<img alt="Dependency inversion loose couple example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/dependency-inversion-loose-couple-example.png" width=50%>
 
 - Frees our high-level components from being dependent on the details of the low-level components.
 - Helps design software that is reusable and resilient to change.
@@ -72,7 +75,7 @@ The dependency inversion principle tells us to think of this in a different way,
 
 <br/>
 
-## Single Responsibility Principle:
+## :rainbow: Single Responsibility Principle:
 
 This principle is a kind of summary of all other principles.
 

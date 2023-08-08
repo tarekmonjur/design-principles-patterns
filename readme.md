@@ -196,11 +196,11 @@ So if we know the desing principle **Program to inerface, not implemention** the
 
 <br/>
 
-### :zap: [SOLID Design Principles](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
+### :zap: [SOLID Design Principles:](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 
 <br/>
 
-## Design Patterns:
+## :blue_book: Design Patterns:
 
 Design patterns are tried-and-true design solutions that have been found to solve specific problems.
 

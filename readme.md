@@ -1,6 +1,6 @@
-# :rocket: Design Patterns & Principles:
+# :rocket: Design Principles & Patterns:
 
-## :mortar_board: Design Principles:
+# :mortar_board: Design Principles:
 
 Design principles are general guidelines that can guide our class structure and relationships.
 Design principles help us by giving an additional set of guidelines on top of the core object-oriented concepts.
@@ -167,27 +167,27 @@ The opposite of loose coupling is tight coupling, which typically means that com
 
 ## :anchor: Program to Interfaces:
 
-This design principle guide us to make use to abstract types, not concret ones to allow our design to be more flexible and maintable.
+This design principle guides us to make use of abstract types, not concrete ones to allow our design to be more flexible and maintainable.
 
-#### Program to Inerface, Not implementatioins:
+#### Program to Interface, Not implementations:
 
-Where possible, components should use abastract classes or interfaces instead of a specific implementation.
-`Progeam to an interface` really means `Program to a super type`
+Where possible, components should use abstract classes or interfaces instead of a specific implementation.
+`Program to an interface` really means `Program to a super type`
 
 ### Programming in an implementation:
 
-Here we assigning the DB property to a new instance of the concrete class Commercial DB.
+Here we assign the DB property to a new instance of the concrete class Commercial DB.
 So if we use a specific concrete class, like Commercial DB. Then we are going to be stuck with that implementation and then we will have to end up essentially hard coding by specific database vendor.
 
 ![Program to implementation](https://github.com/tarekmonjur/design-patterns/blob/master/dist/programming-to-implementation.png)
 
-Like, if we want to change to another database in the future, Or like if we ant to test our code against a lightweight, low overhead test database, this design we have already committed to the commerical DB. So, we have code rework including every reference to that database.
+Like, if we want to change to another database in the future, Or like if we ant to test our code against a lightweight, low overhead test database, this design we have already committed to the commercial DB. So, we have code rework including every reference to that database.
 
-### Programming in an inerface:
+### Programming in an interface:
 
-So if we know the desing principle **Program to inerface, not implemention** then here is our new design.
+So if we know the design principle **Program to interface, not implementation** then here is our new design.
 
-- Use interfaces or abastract classes when possible, rather then concrete classes.
+- Use interfaces or abstract classes when possible, rather than concrete classes.
 - Allow to better exploit polymorphism.
 - Frees classes from knowledge of concrete types.
 - Improves extensibility and maintainability.
@@ -196,13 +196,40 @@ So if we know the desing principle **Program to inerface, not implemention** the
 
 <br/>
 
-### :zap: [SOLID Design Principles:](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
+## :zap: [SOLID Design Principles:](https://github.com/tarekmonjur/design-patterns/blob/master/solid-principles/readme.md)
 
 <br/>
 
-## :blue_book: Design Patterns:
+# :blue_book: Design Patterns:
 
 Design patterns are tried-and-true design solutions that have been found to solve specific problems.
+
+## The Strategy Pattern:
+If all your class relationships are IS-A relationships, then take a closer look at your design. Because when overuse inheritance, you can end up with designs that are inflexible and difficult to change.
+
+### Limitations of inheritance:
+#### Designing Classes for Ducks:
+Supper Class: `Duck`
+Sub Classes: 
+<img alt="Inheritance Duck Classe" src="" />
+
+#### Problems with our Design:
+* Flying and quacking get no benefits from inheritance.
+* We have code duplicated across classes.
+* It's hard to gain knowledge of all the ducks.
+* Changes in supper class can affect other ducks.
+* Runtime behavior changes are difficult.
+
+### Trying with interfaces:
+* An interface defines the methods an object must have in order to be considered a particular type.
+* An interface is an abstract type that specifies a behavior that classes must implement
+* Interfaces allow different classes to share similarities
+* Not all classes need to have the same behavior.
+
+#### Implementing Ducks with Interfaces:
+
+
+
 
 <br/>
 

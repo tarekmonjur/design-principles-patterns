@@ -205,31 +205,56 @@ So if we know the design principle **Program to interface, not implementation** 
 Design patterns are tried-and-true design solutions that have been found to solve specific problems.
 
 ## The Strategy Pattern:
+
+This pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. This lets the algorithm vary independently from clients that use it.
+
 If all your class relationships are IS-A relationships, then take a closer look at your design. Because when overuse inheritance, you can end up with designs that are inflexible and difficult to change.
 
+<img alt="Strategy Design Pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-strategy-pattern.png" />
+
 ### Limitations of inheritance:
+
 #### Designing Classes for Ducks:
+
 Supper Class: `Duck`
-Sub Classes: 
-<img alt="Inheritance Duck Classe" src="" />
+Sub Classes:
+<img alt="Inheritance Duck Classe" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/inheritance-duck-classes.png" />
 
 #### Problems with our Design:
-* Flying and quacking get no benefits from inheritance.
-* We have code duplicated across classes.
-* It's hard to gain knowledge of all the ducks.
-* Changes in supper class can affect other ducks.
-* Runtime behavior changes are difficult.
+
+- Flying and quacking get no benefits from inheritance.
+- We have code duplicated across classes.
+- It's hard to gain knowledge of all the ducks.
+- Changes in supper class can affect other ducks.
+- Runtime behavior changes are difficult.
 
 ### Trying with interfaces:
-* An interface defines the methods an object must have in order to be considered a particular type.
-* An interface is an abstract type that specifies a behavior that classes must implement
-* Interfaces allow different classes to share similarities
-* Not all classes need to have the same behavior.
+
+- An interface defines the methods an object must have in order to be considered a particular type.
+- An interface is an abstract type that specifies a behavior that classes must implement
+- Interfaces allow different classes to share similarities
+- Not all classes need to have the same behavior.
 
 #### Implementing Ducks with Interfaces:
 
+<img alt="Duck classes with interface" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/duck-classes-with-interface.png" />
 
+- It destroy code reuse.
+- It becomes a maintenance nightmare.
+- It doesn't allow for runtime changes in behaviors.
 
+### Trying with Program to an Interface:
+
+**Notice: we also dogin composion here as HAS-A relationship**
+<img alt="Duck with program to an interface" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/duck-with-program-to-an-interface.png" />
+
+#### Implement Principle:
+
+<img alt="Duck quack and squeak behavior" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-behavior1.png" />
+<img alt="Duck Fly behavior" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-behavior2.png" />
+<img alt="Duck Concrete Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-concrete-class.png" />
+<img alt="Duck Abstract Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-abstract-class.png" />
+<img alt="Duck Class Implement" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-class-implement.png" />
 
 <br/>
 

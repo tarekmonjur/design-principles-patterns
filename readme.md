@@ -248,12 +248,12 @@ Sub Classes:
 **Notice: we also dogin composion here as HAS-A relationship**
 <img alt="Duck with program to an interface" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/duck-with-program-to-an-interface.png" />
 
-#### Implement Principle:
+### Implement Principles:
 
 <img alt="Duck quack and squeak behavior" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-behavior1.png" />
 <img alt="Duck Fly behavior" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-behavior2.png" />
-<img alt="Duck Concrete Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-concrete-class.png" />
 <img alt="Duck Abstract Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-abstract-class.png" />
+<img alt="Duck Concrete Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-concrete-class.png" />
 <img alt="Duck Class Implement" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-class-implement.png" />
 
 <br/>

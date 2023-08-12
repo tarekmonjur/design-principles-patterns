@@ -95,6 +95,7 @@ public class SimplePancakeFactory {
 
 ## :dvd: Favor composition over inheritance:
 
+Classes should achieve code reuse using copositin rather than inheritance from a superclass.
 Its also known - `HAS-A is better than IS-A`
 
 #### IS-A is an inheritance relationship. As like
@@ -255,6 +256,69 @@ Sub Classes:
 <img alt="Duck Abstract Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-abstract-class.png" />
 <img alt="Duck Concrete Class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-concrete-class.png" />
 <img alt="Duck Class Implement" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/strategy-duck-class-implement.png" />
+
+### HAS-A is Better Than IS-A:
+
+#### we are using a HAS-A relationship.
+
+- Each duck has a FlyBehavior and a QuackBehavior.
+
+#### Instead of inheriting behavior, we are composing it.
+
+- A duck is composed with a fly behavior and a quack behavior.
+
+<br>
+
+## The Adapter Pattern:
+
+This pattern converts the interface of a class into another interface that clients expect. It allows classes to work together that couldn't otherwise because of incompatible interface. So, basically this pattern's going to given us a way to have two classes work together when they have incompatible interfaces.
+
+<img alt="The Adapter pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-adapter-pattern.png" />
+
+### How this pattern works:
+
+<img alt="How adapter pattern works" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/how-adapter-work.png" />
+
+#### Adapters Use Composition:
+
+- The client is composed with the class with the target interface.
+- The adapter is composed with the adaptee.
+- The adapter delegates calls to the adaptee, and returns any needed value.
+- The client and the adaptee don't know there's an adapter in between.
+
+### Work with the Adapter Pattern:
+
+#### Lets test a duck class with duck simulator:
+
+<img alt="Duck class test example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-test-duck-class.png" />
+
+#### Now what if we want to test another duck called Turkey that has different interface from duck.
+
+<img alt="Duck turkey class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-turkey-class.png" />
+
+#### Using Trukeys with the duck simulator:
+
+- The duck simulator tests ducks using the Duck interface.
+  ```
+  duck.quack();
+  ```
+- Turkeys have a different interface.
+  ```
+  turkey.gobble();
+  ```
+- We can't make a Turkey quack.
+  ```
+  turkey.quack();
+  ```
+- This won't work.
+
+### Making a Adapter:
+
+<img alt="Making a adapter" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-duck.png" />
+
+#### Final code using TurkeyAdapter:
+
+<img alt="Using turkey adapter" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-final-duck-test.png" />
 
 <br/>
 

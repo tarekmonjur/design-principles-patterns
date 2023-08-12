@@ -316,6 +316,10 @@ This pattern converts the interface of a class into another interface that clien
 
 <img alt="Making a adapter" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-duck.png" />
 
+#### Make Turkey adapter:
+
+<img alt="Trukey adapter class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-turkey-adapter.png" />
+
 #### Final code using TurkeyAdapter:
 
 <img alt="Using turkey adapter" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-final-duck-test.png" />

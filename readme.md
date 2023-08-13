@@ -406,6 +406,16 @@ public class SimpleObserver implements Observer {
 }
 ```
 
+### Observer pattern is loosely coupled:
+
+- Subjects and observers are loosely coupled.
+- They interact, but have little knowledge of each other.
+- Subject knows only that the observer implements a specific interface.
+- Subject doesn't need to know the conrete class of the observer.
+- The subject relies on a list of observers.
+- Observer can be added, removed at any time.
+- Subject doesn't care, It keeps doing its job.
+
 <br/>
 
 # :sunglasses: Software Architect

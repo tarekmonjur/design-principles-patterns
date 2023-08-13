@@ -326,6 +326,88 @@ This pattern converts the interface of a class into another interface that clien
 
 <br/>
 
+## The Observer Pattern:
+
+This pattern defines a one to many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+The observer pattern exemplifies the design principle of loose coupling.
+
+#### Lets think about a newspaper subscription, newspaper create and publish a new and we get those news as long as we stay subscribe. so its like as publish and subscribe pattern.
+
+<img alt="The observer pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-observer-pattern.png" />
+
+### Observer pattern implement:
+
+#### The subject Interface:
+
+```
+public interface Subject {
+  public void registerObserver(Observer o);
+  public void removeObserver(Observer o);
+  public void notifiyObservers();
+}
+```
+
+#### The Concrete Subject:
+
+```
+public class SimpleSubject implements Subject {
+  private ArrayList<Observer> observers;
+  private int value = 0;
+  public SimpleSubject() {
+    observers = new ArrayList<Observer>();
+  }
+
+  public void registerObserver(Observer o) {
+    // add to the list
+  }
+  public void removeObserver(Observer o) {
+    // remove from the list
+  }
+  public void notifyObservers() {
+    for (Observer observer : observers) {
+      observer.update(value);
+    }
+  }
+  public void setValue(int value) {
+    this.value = value;
+    this.notifyObservers();
+  }
+}
+```
+
+#### The Observer Interface:
+
+```
+public interface Observer {
+  public void update(int value);
+}
+```
+
+#### The Concrete Observer:
+
+```
+public class SimpleObserver implements Observer {
+  private int value;
+  private Subject simpleSubject;
+
+  public SimpleObserver(Subject simpleSubject) {
+    this.simpleSubject = simpleSubject;
+    simpleSubject.registerObject(this);
+  }
+
+  public void update(int value) {
+    this.value = value;
+    this.display();
+  }
+
+  public void display() {
+    System.out.println("value:"+ this.value);
+  }
+}
+```
+
+<br/>
+
 # :sunglasses: Software Architect
 
 - keep many different components in your mind.

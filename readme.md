@@ -479,6 +479,32 @@ Extending behavior with composition and using open-close principle.
 
 <br/>
 
+## Factory Method Pattern:
+
+The factory method pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory method lets a class defer instantiation to subclasses.
+
+### Multiple Factory:
+
+The single factory is grate for the one store or factory, but what happens if we have multiple store or factoryies?
+Lets say we have two pizza store. one is making New York style pizza and another is making Chicago style pizza.
+
+<img alt="Factory multiple store" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-multiple-store.png" />
+
+#### So now the sisuation we need two different factories.
+
+<img alt="Factory multiple factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-multiple-factory.png" />
+
+#### Creating pizza with factory method:
+
+First choose a store, then make a order.
+
+```
+PizzaStore store = new NYPizzaStore();
+store.orderPizza("cheese");
+```
+
+<br/>
+
 # :sunglasses: Software Architect
 
 - keep many different components in your mind.

@@ -418,6 +418,45 @@ public class SimpleObserver implements Observer {
 
 <br/>
 
+## The Decorator Pattern:
+
+This pattern attaches additional responsibilities to an object diynamically. Decorators provide a flexible alternation to subsclassing for extending functionality.
+<img alt="The decorator pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-decorator-pattern.png" />
+
+### Understanding decorator use diagram:
+
+Extending behavior with composition and using open-close principle.
+
+<img alt="Decorator coffee shop diagram" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-coffee-shop-diagram.png" />
+
+<img alt="Decorator composition" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-composition.png" />
+
+### Implement the decorator pattern:
+
+<img alt="Decorator pattern implement" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-pattern-implement.png" />
+
+#### Component Abstract Super Class:
+
+<img alt="Decorator abstract component" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-abstract-component.png" />
+
+#### Concrete Component Class:
+
+<img alt="Decorator concrete component" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-concrete-component.png" />
+
+#### Condiment Decorator Abstract Class:
+
+<img alt="Decorator condiment abstract" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-condiment-abstract.png" />
+
+#### Concrete Decorator Class:
+
+<img alt="Decorator concrete class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-concrete-class.png" />
+
+#### StarBuzz Coffee Shop:
+
+<img alt="Decorator coffee shop final" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-coffee-shop-final-class.png" />
+
+<br/>
+
 # :sunglasses: Software Architect
 
 - keep many different components in your mind.

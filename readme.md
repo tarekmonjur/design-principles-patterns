@@ -457,6 +457,28 @@ Extending behavior with composition and using open-close principle.
 
 <br/>
 
+## The Simple Factory Pattern:
+
+<img alt="The simple factory pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-simple-factory-pattern.png" />
+
+### Pizza order from resturant:
+
+<img alt="Factory pizza order diagram" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order-diagram.png" />
+
+#### Lets say we have a pizza resturant and order a pizza.
+
+<img alt="Factory pizza order example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order-example.png" />
+
+#### Lets encapsulate and seperate create pizza part and put it in seperate object. Its called factory, cause its responsible for create pizza. So its pizza factory.
+
+<img alt="Factory pizza order factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order-factory.png" />
+
+#### Then call factory for prepare and order pizza.
+
+<img alt="Factory pizza order" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order.png" />
+
+<br/>
+
 # :sunglasses: Software Architect
 
 - keep many different components in your mind.

@@ -492,16 +492,32 @@ Lets say we have two pizza store. one is making New York style pizza and another
 
 #### So now the sisuation we need two different factories.
 
-<img alt="Factory multiple factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-multiple-factory.png" />
+<img alt="Factory method multiple factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-multiple-diagram.png" />
 
-#### Creating pizza with factory method:
+#### Creating pizza factory with factory method:
 
-First choose a store, then make a order.
+<img alt="Factory method pizza factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-factory1.png" />
+<img alt="Factory method pizza factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-mdthod-factory2.png" />
 
-```
-PizzaStore store = new NYPizzaStore();
-store.orderPizza("cheese");
-```
+#### Factory abstract class:
+
+<img alt="Factory method abstract factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-mdthod-abstract-factory.png" />
+
+#### Using factory to order pizza:
+
+<img alt="Factory method pizza order" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-mdthod-pizza-order.png" />
+
+<br/>
+
+## The Iterator Pattern:
+
+This pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+<img alt="The iterator pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-iterator-pattern.png" />
+
+### Menu Iterator Design:
+
+<img alt="Iterator menu design" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/iterator-menu-design.png" />
 
 <br/>
 

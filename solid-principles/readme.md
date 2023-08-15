@@ -19,10 +19,52 @@
 ## :books: Liskov Substitution Principle:
 
 It helps to look at common code that can become a supper class and the special cases can become subclasses. When a design calls for polymorphic peer classes, this principle can be applied to each one of the peers.
+You should always be able to subtitute subtypes for their base class.
 
 - **Objects of some superclass S can be replaced with objects of any subclass of S**
 - **Constrains subclass design**
 - **This helps design good polymorphism**
+
+### Lets see a problem example:
+
+#### This code is work fine.
+
+```
+public void doSomething(ClassA a) {
+    // do some work here
+}
+
+ClassA a = new ClassA();
+obj.doSomething(a);
+```
+
+#### But lets say we have a sub class ClassB.
+
+```
+public void doSomething(ClassA a) {
+    // do some work here
+}
+
+ClassA b = new ClassB();
+obj.doSomething(b);
+```
+
+#### So now its won't work. we can wasy fix it like below.
+
+```
+public void doSomething(ClassA a) {
+    if (a instanceof ClassB) {
+        // special case
+    } else {
+        // normal behavior
+    }
+}
+
+ClassA b = new ClassB();
+obj.doSomething(b);
+```
+
+#### Now our problem is solve, But we open doSomething method for modification that break open-close principle. so that's why this principle come in.
 
 <br/>
 
@@ -34,6 +76,10 @@ This principle helps to define what features of a class need to be exposed.
 - **"Closed to modification" - avoids tweaking the code to handle new situations**
 - Allow new behavior without risking changes to proven code.
 - Improve maintainability and extensibility of a design.
+
+<img alt="Open close principle example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/open-close-duck-class.png" width=100%>
+
+<img alt="Open close principle example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/open-close-duck.png" width=100%>
 
 <br/>
 
@@ -81,3 +127,5 @@ This principle is a kind of summary of all other principles.
 
 - **One responsibility per class**
 - **A class should have only one reason to change**
+
+<img alt="Single responsibility principle example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/single-responsibility-example.png" width=100%>

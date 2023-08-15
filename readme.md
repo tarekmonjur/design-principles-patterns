@@ -519,6 +519,18 @@ This pattern provides a way to access the elements of an aggregate object sequen
 
 <img alt="Iterator menu design" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/iterator-menu-design.png" />
 
+#### Create menu class:
+
+<img alt="Iterator menu class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/iterator-menu-class.png" />
+
+#### Create menu iterator class:
+
+<img alt="Iterator menu iterator class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/iterator-menu-iterator.png" />
+
+#### Cafe menu print:
+
+<img alt="Iterator cafe menu print" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/iterator-menu-print.png" />
+
 <br/>
 
 # :sunglasses: Software Architect

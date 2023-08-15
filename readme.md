@@ -497,15 +497,15 @@ Lets say we have two pizza store. one is making New York style pizza and another
 #### Creating pizza factory with factory method:
 
 <img alt="Factory method pizza factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-factory1.png" />
-<img alt="Factory method pizza factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-mdthod-factory2.png" />
+<img alt="Factory method pizza factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-factory2.png" />
 
 #### Factory abstract class:
 
-<img alt="Factory method abstract factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-mdthod-abstract-factory.png" />
+<img alt="Factory method abstract factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-abstract-factory.png" />
 
 #### Using factory to order pizza:
 
-<img alt="Factory method pizza order" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-mdthod-pizza-order.png" />
+<img alt="Factory method pizza order" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-order.png" />
 
 <br/>
 

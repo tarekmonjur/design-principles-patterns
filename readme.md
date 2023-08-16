@@ -533,6 +533,31 @@ This pattern provides a way to access the elements of an aggregate object sequen
 
 <br/>
 
+## The Builder Pattern:
+
+Seperate the construction of a complex object from its representation so that the same construction process can create different representations.
+
+This pattern concerned with encapsulating the complexities of how we build an individual object.
+
+### Builder pattern diagram:
+
+<img alt="The Builder pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-builder-pattern.png" />
+
+### Build cars using builder:
+
+<img alt="Car builder" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/builder-car-builder.png" />
+
+<br/>
+
+### When use this pattern:
+
+- we do like to create objects of the same kind, for example, a car.
+- we do like the client to have flexibility in how we create the cars.
+- The process of building a car is independent of the parts that make up the car and how they are assembled.
+- The construction process allows for different kinds of cars.
+
+<br/>
+
 # :sunglasses: Software Architect
 
 - keep many different components in your mind.

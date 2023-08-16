@@ -19,13 +19,13 @@
 ## :books: Liskov Substitution Principle:
 
 It helps to look at common code that can become a supper class and the special cases can become subclasses. When a design calls for polymorphic peer classes, this principle can be applied to each one of the peers.
-You should always be able to subtitute subtypes for their base class.
+You should always be able to substitute subtypes for their base class.
 
 - **Objects of some superclass S can be replaced with objects of any subclass of S**
 - **Constrains subclass design**
 - **This helps design good polymorphism**
 
-### Lets see a problem example:
+### Let's see a problem example:
 
 #### This code is work fine.
 
@@ -38,7 +38,7 @@ ClassA a = new ClassA();
 obj.doSomething(a);
 ```
 
-#### But lets say we have a sub class ClassB.
+#### But let's say we have a sub-class ClassB.
 
 ```
 public void doSomething(ClassA a) {
@@ -49,7 +49,7 @@ ClassA b = new ClassB();
 obj.doSomething(b);
 ```
 
-#### So now its won't work. we can wasy fix it like below.
+#### So now it won't work. we can always fix it like below.
 
 ```
 public void doSomething(ClassA a) {
@@ -64,7 +64,7 @@ ClassA b = new ClassB();
 obj.doSomething(b);
 ```
 
-#### Now our problem is solve, But we open doSomething method for modification that break open-close principle. so that's why this principle come in.
+#### Now our problem is solved, But we open the doSomething method for modification that break the open-close principle. so that's why this principle comes in.
 
 <br/>
 

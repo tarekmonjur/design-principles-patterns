@@ -4,7 +4,7 @@
 
 Design principles are general guidelines that can guide our class structure and relationships.
 Design principles help us by giving an additional set of guidelines on top of the core object-oriented concepts.
-Following these Design Principles have resulted in a set of recurring patterns and we call those structures design patterns.
+Following these Design Principles has resulted in a set of recurring patterns and we call those structures design patterns.
 
 - Guidelines, not rules or laws.
 - Observed to result in good object-oriented designs.
@@ -65,7 +65,7 @@ public Pancake orderPancake(String type) {
 }
 ```
 
-#### But let's think about how this code change over the request to take banana pancake off the menu, perhaps it's poor selling. Likewise, request to add a new pancake to the menu list. So over time selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.
+#### But let's think about how this code changed over the request to take banana pancake off the menu, perhaps it's poor selling. Likewise, request to add a new pancake to the menu list. So over time selecting the type of pancake to instantiate that's going to keep changing with every new requirement that we have.
 
 ### Create an independent factory:
 
@@ -77,7 +77,7 @@ public class SimplePancakeFactory {
     Pancake pancake == null;
     if (type.equals == 'classic') {
       pancake = new ClassicPancake();
-    } else if (type.equals == 'bluberry') {
+    } else if (type.equals == 'blueberry') {
       pancake = new BlueberryPancake();
     } else if (type.equals == 'chocolate') {
       pancake = new ChocolatePancake();
@@ -95,7 +95,7 @@ public class SimplePancakeFactory {
 
 ## :dvd: Favor composition over inheritance:
 
-Classes should achieve code reuse using copositin rather than inheritance from a superclass.
+Classes should achieve code reuse using composition rather than inheritance from a superclass.
 Its also known - `HAS-A is better than IS-A`
 
 #### IS-A is an inheritance relationship. As like
@@ -122,7 +122,7 @@ Ah, that actually commentatorial explosion of classes over time. as we have to d
 ### Let's see a different approach: Favor composition over inheritance.
 
 **Instead of a coffeeWithButter IS-A coffee, what about a coffee HAS-A condiments?**
-Composition can provide an alternative subclassing for extending behavior.
+The composition can provide an alternative subclassing for extending behavior.
 
 ![favor composition condiments classes](https://github.com/tarekmonjur/design-patterns/blob/master/dist/favor-composition-condiments-classes.png)
 
@@ -178,11 +178,11 @@ Where possible, components should use abstract classes or interfaces instead of 
 ### Programming in an implementation:
 
 Here we assign the DB property to a new instance of the concrete class Commercial DB.
-So if we use a specific concrete class, like Commercial DB. Then we are going to be stuck with that implementation and then we will have to end up essentially hard coding by specific database vendor.
+So if we use a specific concrete class, like Commercial DB. Then we are going to be stuck with that implementation and then we will have to end up essentially hard coding by a specific database vendor.
 
 ![Program to implementation](https://github.com/tarekmonjur/design-patterns/blob/master/dist/programming-to-implementation.png)
 
-Like, if we want to change to another database in the future, Or like if we ant to test our code against a lightweight, low overhead test database, this design we have already committed to the commercial DB. So, we have code rework including every reference to that database.
+Like, if we want to change to another database in the future, Or like if we want to test our code against a lightweight, low-overhead test database, this design we have already committed to the commercial DB. So, we have code rework including every reference to that database.
 
 ### Programming in an interface:
 
@@ -271,7 +271,7 @@ Sub Classes:
 
 ## The Adapter Pattern:
 
-This pattern converts the interface of a class into another interface that clients expect. It allows classes to work together that couldn't otherwise because of incompatible interface. So, basically this pattern's going to given us a way to have two classes work together when they have incompatible interfaces.
+This pattern converts the interface of a class into another interface that clients expect. It allows classes to work together that couldn't otherwise because of incompatible interfaces. So, basically, this pattern's going to give us a way to have two classes work together when they have incompatible interfaces.
 
 <img alt="The Adapter pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-adapter-pattern.png" />
 
@@ -288,11 +288,11 @@ This pattern converts the interface of a class into another interface that clien
 
 ### Work with the Adapter Pattern:
 
-#### Lets test a duck class with duck simulator:
+#### Let's test a duck class with a duck simulator:
 
 <img alt="Duck class test example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-test-duck-class.png" />
 
-#### Now what if we want to test another duck called Turkey that has different interface from duck.
+#### Now what if we want to test another duck called Turkey that has a different interface from duck?
 
 <img alt="Duck turkey class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-turkey-class.png" />
 
@@ -312,13 +312,13 @@ This pattern converts the interface of a class into another interface that clien
   ```
 - This won't work.
 
-### Making a Adapter:
+### Making an Adapter:
 
 <img alt="Making a adapter" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-duck.png" />
 
 #### Make Turkey adapter:
 
-<img alt="Trukey adapter class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-turkey-adapter.png" />
+<img alt="Turkey adapter class" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/adapter-turkey-adapter.png" />
 
 #### Final code using TurkeyAdapter:
 
@@ -328,10 +328,10 @@ This pattern converts the interface of a class into another interface that clien
 
 ## The Observer Pattern:
 
-This pattern defines a one to many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+This pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 The observer pattern exemplifies the design principle of loose coupling.
 
-#### Lets think about a newspaper subscription, newspaper create and publish a new and we get those news as long as we stay subscribe. so its like as publish and subscribe pattern.
+#### Let's think about a newspaper subscription, newspaper create and publish a new and we get those news as long as we stay subscribed. so it's like as publish and subscribe pattern.
 
 <img alt="The observer pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-observer-pattern.png" />
 
@@ -409,23 +409,23 @@ public class SimpleObserver implements Observer {
 ### Observer pattern is loosely coupled:
 
 - Subjects and observers are loosely coupled.
-- They interact, but have little knowledge of each other.
+- They interact but have little knowledge of each other.
 - Subject knows only that the observer implements a specific interface.
-- Subject doesn't need to know the conrete class of the observer.
+- The subject doesn't need to know the concrete class of the observer.
 - The subject relies on a list of observers.
-- Observer can be added, removed at any time.
+- Observer can be added, or removed at any time.
 - Subject doesn't care, It keeps doing its job.
 
 <br/>
 
 ## The Decorator Pattern:
 
-This pattern attaches additional responsibilities to an object diynamically. Decorators provide a flexible alternation to subsclassing for extending functionality.
+This pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternation to subclassing for extending functionality.
 <img alt="The decorator pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-decorator-pattern.png" />
 
 ### Understanding decorator use diagram:
 
-Extending behavior with composition and using open-close principle.
+Extending behavior with composition and using the open-close principle.
 
 <img alt="Decorator coffee shop diagram" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/decorator-coffee-shop-diagram.png" />
 
@@ -461,19 +461,19 @@ Extending behavior with composition and using open-close principle.
 
 <img alt="The simple factory pattern" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/the-simple-factory-pattern.png" />
 
-### Pizza order from resturant:
+### Pizza order from restaurant:
 
 <img alt="Factory pizza order diagram" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order-diagram.png" />
 
-#### Lets say we have a pizza resturant and order a pizza.
+#### Let's say we have a pizza restaurant and order a pizza.
 
 <img alt="Factory pizza order example" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order-example.png" />
 
-#### Lets encapsulate and seperate create pizza part and put it in seperate object. Its called factory, cause its responsible for create pizza. So its pizza factory.
+#### Let's encapsulate and separate create pizza part and put it in a separate object. It's called the factory, cause it's responsible for creating pizza. So it's a pizza factory.
 
 <img alt="Factory pizza order factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order-factory.png" />
 
-#### Then call factory for prepare and order pizza.
+#### Then call the factory to prepare and order pizza.
 
 <img alt="Factory pizza order" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-pizza-order.png" />
 
@@ -481,16 +481,16 @@ Extending behavior with composition and using open-close principle.
 
 ## Factory Method Pattern:
 
-The factory method pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory method lets a class defer instantiation to subclasses.
+The factory method pattern defines an interface for creating an object but lets subclasses decide which class to instantiate. The factory method lets a class defer instantiation to subclasses.
 
 ### Multiple Factory:
 
-The single factory is grate for the one store or factory, but what happens if we have multiple store or factoryies?
-Lets say we have two pizza store. one is making New York style pizza and another is making Chicago style pizza.
+A single factory is great for one store or factory, but what happens if we have multiple stores or factories?
+Let's say we have two pizza stores. one is making New York-style pizza and another is making Chicago-style pizza.
 
 <img alt="Factory multiple store" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-multiple-store.png" />
 
-#### So now the sisuation we need two different factories.
+#### So now the situation we need two different factories.
 
 <img alt="Factory method multiple factory" src="https://github.com/tarekmonjur/design-patterns/blob/master/dist/factory-method-multiple-diagram.png" />
 
@@ -535,9 +535,9 @@ This pattern provides a way to access the elements of an aggregate object sequen
 
 ## The Builder Pattern:
 
-Seperate the construction of a complex object from its representation so that the same construction process can create different representations.
+Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
-This pattern concerned with encapsulating the complexities of how we build an individual object.
+This pattern is concerned with encapsulating the complexities of how we build an individual object.
 
 ### Builder pattern diagram:
 
@@ -549,7 +549,7 @@ This pattern concerned with encapsulating the complexities of how we build an in
 
 <br/>
 
-### When use this pattern:
+### When using this pattern:
 
 - we do like to create objects of the same kind, for example, a car.
 - we do like the client to have flexibility in how we create the cars.
@@ -833,7 +833,7 @@ This is a pattern where two entirely separate models in our applications.
 
 # Micro Service Patterns
 
-- Smaller scoped unit of work.
+- The smaller scoped unit of work.
 - Focus on data, business, or functional domains.
 
 ## Decomposition Patterns

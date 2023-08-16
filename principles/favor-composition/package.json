@@ -1,0 +1,33 @@
+{
+  "name": "favor-composition",
+  "version": "1.0.0",
+  "description": "design principle",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start:dev": "nodemon --watch './src' --ext '.ts,.js' --exec ts-node ./src/index.ts",
+    "start": "npm run build && node build/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarekmonjur/design-patterns.git"
+  },
+  "keywords": [
+    "design",
+    "principle",
+    "example"
+  ],
+  "author": "tarekmonjur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarekmonjur/design-patterns/issues"
+  },
+  "homepage": "https://github.com/tarekmonjur/design-patterns#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}

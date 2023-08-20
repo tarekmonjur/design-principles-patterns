@@ -1,6 +1,6 @@
-import { Order } from './order'
+import { Order } from './order';
 
-console.log('Hello world!', 'Hi Tarek')
+console.log('Hello world!', 'Hi Tarek');
 
-const order = new Order('chocolate-cake')
-order.make()
+const order = new Order('chocolate-cake');
+order.make();

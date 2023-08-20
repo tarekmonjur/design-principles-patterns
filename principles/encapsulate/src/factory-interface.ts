@@ -1,4 +1,4 @@
 export interface FactoryInterface {
-    cook(): void
-    plate(): void
+    cook(): void;
+    plate(): void;
 }

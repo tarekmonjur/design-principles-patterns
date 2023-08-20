@@ -2,19 +2,15 @@
     "name": "favor-composition",
     "version": "1.0.0",
     "description": "design principle",
-    "main": "index.ts",
+    "main": "build/index.js",
     "scripts": {
         "build": "rimraf ./build && tsc",
         "start:dev": "nodemon --watch './src' --ext '.ts,.js' --exec ts-node ./src/index.ts",
         "start": "npm run build && node build/index.js",
         "test": "jest",
         "format": "prettier --write ./src",
-        "pretty-quick": "pretty-quick"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "pretty-quick --staged"
-        }
+        "pretty-quick": "pretty-quick --staged --ignore-path .prettierignore",
+        "lint": "eslint --ext .ts,.js --ignore-path .gitignore ."
     },
     "repository": {
         "type": "git",
@@ -32,7 +28,9 @@
     },
     "homepage": "https://github.com/tarekmonjur/design-patterns#readme",
     "devDependencies": {
-        "husky": "^8.0.3",
+        "@typescript-eslint/eslint-plugin": "^6.4.0",
+        "@typescript-eslint/parser": "^6.4.0",
+        "eslint": "^8.47.0",
         "nodemon": "^3.0.1",
         "prettier": "^3.0.2",
         "pretty-quick": "^3.0.2",
